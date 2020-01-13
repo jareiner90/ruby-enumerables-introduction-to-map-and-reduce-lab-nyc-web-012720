@@ -22,4 +22,5 @@ end
 def reduce_to_all_true(array)
   if array
     array.reduce(0) { |sum, num| sum + num}
+  end 
 end
