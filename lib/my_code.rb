@@ -19,10 +19,6 @@ def reduce_to_total(source_array, starting_point = 0)
     source_array.reduce(starting_point) { |sum, num| sum + num}
 end
 
-def reduce_to_all_true(array)
-  puts flag = array.all? { |i| i == true }
-
-  if flag
-    array.reduce { |sum, num| sum + num}
-  end
+def reduce_to_all_true(source_array)
+   return source_array.reduce{ |x, point| !!x && !!point }
 end
