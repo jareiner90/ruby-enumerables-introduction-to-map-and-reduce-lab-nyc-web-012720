@@ -17,4 +17,4 @@ end
 
 def reduce_to_total(array, starting_point)
   array.reduce { |sum, starting_point| sum + starting_point }
-end 
+end
