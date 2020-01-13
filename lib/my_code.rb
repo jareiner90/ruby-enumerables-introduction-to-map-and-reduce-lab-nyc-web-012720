@@ -20,7 +20,9 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(array)
-  if array.is_a? true
-    array.reduce(0) { |sum, num| sum + num}
-  end
+  flag = array.all? { |i| i == true }
+
+  if flag
+    array.reduce { |sum, num| sum + num}
+  end 
 end
