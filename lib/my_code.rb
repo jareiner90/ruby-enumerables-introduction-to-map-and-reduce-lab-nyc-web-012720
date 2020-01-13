@@ -15,10 +15,10 @@ def map_to_square(array)
   array.map { |i| i * i }
 end
 
-def reduce_to_total(source_array, starting_point = 0)
-    source_array.reduce(starting_point) { |sum, num| sum + num}
+def reduce_to_total(array, starting_point = 0)
+    array.reduce(starting_point) { |sum, num| sum + num}
 end
 
-def reduce_to_all_true(source_array)
-   return source_array.reduce{ |i, x| !!i && !!x }
+def reduce_to_all_true(array)
+   return array.reduce{ |i, x| !!i && !!x }
 end
